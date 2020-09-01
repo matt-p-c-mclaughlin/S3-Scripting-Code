@@ -1,13 +1,13 @@
 import boto3
 from datetime import datetime
 
-#thebucket = 'bucknellrobotics'
-#access_key = 'AKIAWO5RCAESTR2YI3NU'
-#secret_key = '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'
+#thebucket = '' #removed for security reasons
+#access_key = '' #removed for security reasons
+#secret_key = '' #removed for security reasons
 
 s3 = boto3.resource('s3')
 
-BUCKET_NAME = "bucknellrobotics"
+BUCKET_NAME = "" #removed for security reasons
 IMG_BUCKET = s3.Bucket(name=BUCKET_NAME)
 
 def key_parser(raw_key=None):
